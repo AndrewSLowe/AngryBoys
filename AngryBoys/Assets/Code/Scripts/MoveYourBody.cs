@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,10 +7,14 @@ public class PlayerController : MonoBehaviour
 {
     private BoxCollider2D coll;
     private Rigidbody2D rb;
+    private SpriteRenderer sprite;
+    private Animator anim;
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] public float moveSpeed = 5f;
     [SerializeField] public float jumpForce = 3f;
-    private Animator anim;
+
+    private enum MovementState { idle, running, jumping }
+    
     private float dirX = 0f;
     
     private void Start()
@@ -42,17 +47,28 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAnimation()
     {
+        MovementState state;
+
         if (dirX > 0f)
         {
+            state = MovementState.running;
             anim.SetBool("running", true);
         }
         else if (dirX < 0f)
         {
+            state = MovementState.running;
             anim.SetBool("running", true);
         }
         else
         {
+            state = MovementState.idle;
             anim.SetBool("running", false);
         }
+        if (rb.velocity.y > .1f)
+        {
+            state = MovementState.jumping;
+        }
+
+        anim.SetInteger("state", (int)state);
     }
 }
