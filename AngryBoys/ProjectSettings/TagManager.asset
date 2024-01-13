@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cherry
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -38,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3284748947
+    locked: 0
+  - name: Terrain
+    uniqueID: 423590037
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
