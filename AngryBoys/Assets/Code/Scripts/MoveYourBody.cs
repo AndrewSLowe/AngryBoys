@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float jumpForce = 3f;
 
     private enum MovementState { idle, running, jumping, falling }
+    [SerializeField] private AudioSource jumpSoundEffect;
     private float dirX = 0f;
     
     private void Start()
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
        
@@ -66,6 +68,7 @@ public class PlayerController : MonoBehaviour
 
         if (rb.velocity.y > .1f) // || rb.velocity.y < -.1f
         {
+            
             state = MovementState.jumping;
         }
         else if (rb.velocity.y < -.1f)
