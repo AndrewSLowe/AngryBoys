@@ -24,7 +24,6 @@ public class Finish : MonoBehaviour
             AnimatePlayerFinish(collision);
             bgMusic.Stop();
             finishSound.Play();
-            // anim.SetTrigger("finish");
             Invoke("CompleteLevel", 2f);
         }
     }
