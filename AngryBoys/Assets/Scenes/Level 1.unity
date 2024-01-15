@@ -1664,6 +1664,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2001565291935955571, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637357726539027182, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3637357726539027182, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -113854,6 +113862,22 @@ PrefabInstance:
     - target: {fileID: 6660325646158860973, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
       propertyPath: m_Name
       value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660325646158860973, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127883748064318458, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127883748064318458, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127883748064318458, guid: 6506aef9fe3baca4296ca796818dd132, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 423590037
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

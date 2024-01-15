@@ -5,7 +5,7 @@ public class BounceScript : MonoBehaviour
 {
     
     public Animator anim;
-    public float jumpForce = 10f;
+    public float jumpForce = 7.5f;
     void Start()
     {
         anim = GetComponent<Animator>();

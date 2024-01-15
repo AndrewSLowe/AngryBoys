@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.CompilerServices;
 using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
@@ -23,12 +24,26 @@ public class PlayerController : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        Debug.Log("Selected Character ID in Next Scene: " + GameManager.SelectedCharacterID);
+        InitializeAnimations(GameManager.SelectedCharacterID);
+    }
+    void InitializeAnimations(int characterID)
+    {
+        Debug.Log(characterID);
+        if (characterID == 1)
+        {
+            anim.SetTrigger("character1");
+        }
+        else 
+        {
+            anim.SetTrigger("character2");
+        }
     }
 
 
     private void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal"); // Raw lets you get back to 0 immediately
+        dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -65,10 +80,8 @@ public class PlayerController : MonoBehaviour
             state = MovementState.idle;
         }
 
-
         if (rb.velocity.y > .1f) // || rb.velocity.y < -.1f
-        {
-            
+        {            
             state = MovementState.jumping;
         }
         else if (rb.velocity.y < -.1f)
