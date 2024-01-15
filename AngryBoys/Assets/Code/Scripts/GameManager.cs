@@ -1,5 +1,5 @@
 
 public class GameManager
 {
-    public static int SelectedCharacterID = 1;
+    public static int SelectedCharacterID = 2;
 }

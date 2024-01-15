@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89e3ed3e3bd51044a93354e52c172e84
+guid: 2532d238b0fff3341a5f877b840ce28e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AndrewSpriteRun_0
+      name: AndrewSpriteFinish 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dfd6b74d5c66544a8476d261be6ac50
-      internalID: 1805490168
+      spriteID: 1721b73e18aeec44cac2ec18f8de538a
+      internalID: -1850580433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AndrewSpriteRun_1
+      name: AndrewSpriteFinish 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ade6bc30b4049e4d8b3c93a6dde8d2a
-      internalID: -187561195
+      spriteID: f85c99702bebd6d45918fad440fa28ac
+      internalID: -1729587828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AndrewSpriteRun_2
+      name: AndrewSpriteFinish 1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,8 +179,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac2adf16c929fd4e9a06d936fa6ef89
-      internalID: 2009435124
+      spriteID: f1bff0ad491be1c48b9ec2f553b8560b
+      internalID: 1326435634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndrewSpriteFinish 1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc544e16f24ac24ba561596080e5c23
+      internalID: 90531616
       vertices: []
       indices: 
       edges: []
@@ -196,9 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AndrewSpriteRun_0: 1805490168
-      AndrewSpriteRun_1: -187561195
-      AndrewSpriteRun_2: 2009435124
+      AndrewSpriteFinish 1_0: -1850580433
+      AndrewSpriteFinish 1_1: -1729587828
+      AndrewSpriteFinish 1_2: 1326435634
+      AndrewSpriteFinish 1_3: 90531616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
